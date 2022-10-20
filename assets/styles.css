@@ -8,7 +8,7 @@
 
 .header-background {
     margin: 0;
-    background: rgba(0, 0, 0, 0.5) url('assets/images/banner1.jpg');
+    background: rgba(0, 0, 0, 0.5) url('images/banner1.jpg');
     background-size: cover;
     height: 100%;
     padding-bottom: 310px;
@@ -30,6 +30,10 @@
 
 .header-contact .row .col-lg-3 ul li a {
     color: #fdf4f9;
+}
+
+.header-contact .row .col-lg-3 ul li a:hover {
+    color: #03f4eb;
 }
 
 .header-contact .row .col-lg-3 ul li a i {
@@ -60,13 +64,27 @@
 .main-header .row .col-lg-6 ul li {
     display: inline-block;
     list-style: none;
-    padding: 0 20px;
+    /* padding: 0 20px; */
 }
 
 .main-header .row .col-lg-6 ul li a {
     text-decoration: none;
     color: #fefff8;
     font-size: 13px;
+    width: 100px;
+    padding: 10px 20px;
+}
+
+.main-header .row .col-lg-6 ul li a select option {
+    background-color: #03f4eb;
+    color: black;
+}
+
+.main-header .row .col-lg-6 ul li a:hover,
+.main-header .row .col-lg-6 ul li a select:hover {
+    color: #03f4eb;
+    cursor: pointer;
+    overflow: hidden;
 }
 
 select {
@@ -79,7 +97,7 @@ select {
     margin-top: 160px;
 }
 
-.blog .row .col-lg-6 h1 {
+.blog h1 {
     color: #fffae9;
     font-weight: normal;
     letter-spacing: 2px;
@@ -91,6 +109,7 @@ select {
     letter-spacing: 2px;
     padding: 10px 40px;
     background-color: #03f4eb;
+    border: 1px solid #03f4eb;
     color: #fff;
     margin: 0 30%;
     border: none;
@@ -111,9 +130,15 @@ select {
     margin-bottom: 35px;
 }
 
-.content .row .col-lg-6 .readmore-btn {
+.content .readmore-btn {
     margin: 20px 0 0;
     padding: 15px 30px;
+    border: 1px solid #03f4eb;
+}
+
+.readmore-btn:hover {
+    background-color: #fff;
+    color: #03f4eb;
 }
 
 .feature-heading h1 {
@@ -194,7 +219,7 @@ select {
 
 /* ////////////////////////////// OUR PEOPLE ///////////////////////////////////////// */
 .about-us-background {
-    background: rgba(0, 0, 0, 0.5) url('assets/images/banner3.jpg');
+    background: rgba(0, 0, 0, 0.5) url('images/banner3.jpg');
     height: 430px;
     background-blend-mode: darken;
     background-size: cover;
@@ -273,6 +298,10 @@ select {
 .team-contact ul li a i {
     color: #fff;
     font-size: 15px;
+}
+
+.team-contact ul li a i:hover {
+    color: #03f4eb;
 }
 
 .team-member-img {
@@ -375,6 +404,10 @@ select {
     padding: 13px 0;
 }
 
+.submit-btn:hover {
+    opacity: 0.6;
+}
+
 .address-info h2 {
     font-size: 25px;
     margin: 51px 0 28px;
@@ -396,7 +429,7 @@ select {
 
 /* //////////////////////////////////////////// Footer ////////////////////////////////////////////////////////////////// */
 .footer-wrapper .container-fluid {
-    background: rgba(0, 0, 0, 0.9) url('assets/images/banner2.jpg');
+    background: rgba(0, 0, 0, 0.9) url('images/banner2.jpg');
     background-blend-mode: darken;
     background-attachment: fixed;
     padding-bottom: 20px;
@@ -407,7 +440,6 @@ select {
 }
 
 .footer-info {
-    margin-left: 44px;
     width: 334px;
 }
 
@@ -439,14 +471,37 @@ select {
     max-width: 307px;
 }
 
+.newsletter-input-wrapper {
+    position: relative;
+}
+
+.send-icon {
+    position: absolute;
+    color: #827e7b;
+    top: 18px;
+    left: 216px;
+}
+
+.send-icon i {
+    font-size: 20px;
+}
+
 .newsletter h3 {
     line-height: 2;
 }
 
-.copyright p {
+.newsletter input {
+    background: transparent;
+    border: 1px solid #827e7b;
+    width: 100%;
+    padding: 17px 10px;
+}
+
+.copyright {
     text-align: center;
     color: #fafce6;
 }
+
 
 .social-icons ul li {
     list-style: none;
@@ -460,6 +515,10 @@ select {
     color: #fafce6;
 }
 
-.social-icon-wrapper .social-icons ul li a i {
-    margin: 0 auto;
+.social-icons ul li a:hover {
+    color: #03f4eb;
+}
+
+.social-icons {
+    text-align: center;
 }
